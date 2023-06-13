@@ -21,10 +21,10 @@ const Button = ({
     {rightIcon && (
       <div className="relative w-6 h-6">
         <Image
+          className="object-contain"
           src={rightIcon}
           alt="arrow_left"
           fill
-          className="object-contain"
         />
       </div>
     )}

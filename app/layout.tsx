@@ -1,18 +1,22 @@
-import { ReactNode } from "react";
 import "./globals.css";
 import { Footer, Navbar } from "@/components";
+import { LayoutProps } from "@/types";
 
 export const metadata = {
   title: "Car Hub",
   description: "Discover the best cars in the world",
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+const RootLayout = ({ children }: LayoutProps) => {
   return (
     <html lang="en">
-      <Navbar />
-      <body className="relative">{children}</body>
-      <Footer />
+      <body className="relative">
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
-}
+};
+
+export default RootLayout;
