@@ -1,9 +1,11 @@
 import { Hero } from "@/components";
 
-export default function Home() {
+const Home = () => {
   return (
     <main className="overflow-hidden">
       <Hero />
     </main>
   );
-}
+};
+
+export default Home;
